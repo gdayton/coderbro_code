@@ -1,0 +1,8 @@
+version: '2'
+services:
+  node: 
+    build: ./node-app
+    ports:
+    - "3000:3000"
+  cron:
+    build: ./cron-app
