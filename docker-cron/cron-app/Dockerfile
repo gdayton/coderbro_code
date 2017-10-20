@@ -9,6 +9,8 @@ ADD do.sh .
 RUN apt-get update
 RUN apt-get install cron
 
+RUN touch /cron/cron.log
+
 RUN chmod +x do.sh
 RUN chmod 0600 mycron
 

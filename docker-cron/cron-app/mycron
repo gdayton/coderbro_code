@@ -1,2 +1,2 @@
-* * * * * root /bin/bash do.sh >> /cron/cron.log 2>&1
+* * * * * /cron/do.sh >> /cron/cron.log 2>&1
 
