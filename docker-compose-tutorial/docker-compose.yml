@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: ./angular-app
+    ports:
+    - "80:80"
+    links:
+    - node
+    volumes:
+    - "/Users/gdayton/Documents/docker-compose-tutorial/angular-app/dist:/usr/share/nginx/html"
+  node:
+    build: ./node-app
+    ports:
+    - "3000:3000"
+    links:
+    - mongo
+  mongo:
+    image: mongo
+    ports: 
+    - "27017:27017"
