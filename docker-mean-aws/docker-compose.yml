@@ -6,8 +6,8 @@ services:
     - "80:80"
     links:
     - node
-    volumes:
-    - "/Users/gdayton/Documents/docker-compose-tutorial/angular-app/dist:/usr/share/nginx/html"
+    # volumes:
+    # - "/Users/gdayton/Documents/docker-mean-aws/angular-app/dist:/usr/share/nginx/html"
   node:
     build: ./node-app
     ports:
